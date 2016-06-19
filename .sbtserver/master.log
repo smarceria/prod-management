@@ -1,0 +1,418 @@
+New log file opened at Sun Jun 19 18:52:04 ICT 2016 by 6416@Panda-PC
+jvm 6416@Panda-PC
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.92-b14
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=D:\Scala\workspace\product-management
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory D:\Scala\workspace\product-management\project
+[Loading] Found non-root projects 
+[Loading] Done in D:\Scala\workspace\product-management\project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in D:\Scala\workspace\product-management\project, returning: (product-management-build)
+Loading project definition from D:\Scala\workspace\product-management\project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4274b6d3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory D:\Scala\workspace\product-management
+[Loading] Found root project root w/ remaining 
+deducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbteclipse.plugin.EclipsePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler))), Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.AkkaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(org.irundaia.sbt.sass.SbtSassify),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(com.typesafe.sbteclipse.plugin.EclipsePlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.sbt.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLayoutPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLogback))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayNettyServer))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(org.irundaia.sbt.sass.SbtSassify)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.sbt.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayNettyServer,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,play.sbt.PlayLogback,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.jshint.SbtJSHint,com.typesafe.sbteclipse.plugin.EclipsePlugin,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.docker.DockerPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.packager.debian.DebianPlugin,org.irundaia.sbt.sass.SbtSassify,com.typesafe.sbt.digest.SbtDigest,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
+sorting: ns: List(sbt.plugins.CorePlugin, play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbteclipse.plugin.EclipsePlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, com.typesafe.sbt.SbtNativePackager)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager) not found List(play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbteclipse.plugin.EclipsePlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbteclipse.plugin.EclipsePlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbteclipse.plugin.EclipsePlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask) not found List(play.sbt.PlayScala, play.sbt.Play, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript) not found List(play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, play.sbt.forkrun.PlayForkRun) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, org.irundaia.sbt.sass.SbtSassify, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.PlayLogback, play.sbt.forkrun.PlayForkRun)
+[Loading] Done in D:\Scala\workspace\product-management, returning: (root)
+Set current project to product-management (in build file:/D:/Scala/workspace/product-management/)
+Reapplying settings...
+Set current project to product-management (in build file:/D:/Scala/workspace/product-management/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/D:/Scala/workspace/product-management/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@13c647e5, check cycles: false
+
+Initial source changes: 
+	removed:Set(D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala, D:\Scala\workspace\product-management\app\models\entities\Supplier.scala)
+	added: Set()
+	modified: Set(D:\Scala\workspace\product-management\app\Module.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\RoutesPrefix.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(D:\Scala\workspace\product-management\app\Module.scala, D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\RoutesPrefix.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala, D:\Scala\workspace\product-management\app\models\entities\Supplier.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(D:\Scala\workspace\product-management\app\Module.scala, D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\RoutesPrefix.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala, D:\Scala\workspace\product-management\app\models\entities\Supplier.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala)
+
+Recompiling all 13 sources: invalidated sources (10) exceeded 50.0% of all sources
+Read from stdout: Compiling 12 Scala sources and 1 Java source to D:\Scala\workspace\product-management\target\scala-2.11\classes...
+Compiling 12 Scala sources and 1 Java source to D:\Scala\workspace\product-management\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 62786f69, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_92\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_92\jre\classes;C:\Users\TEMP\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar
+	-classpath
+	D:\Scala\workspace\product-management\target\scala-2.11\classes;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-server_2.11\2.5.0\jars\play-server_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play_2.11\2.5.0\jars\play_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\build-link\2.5.0\jars\build-link.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-exceptions\2.5.0\jars\play-exceptions.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-iteratees_2.11\2.5.0\jars\play-iteratees_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-json_2.11\2.5.0\jars\play-json_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-functional_2.11\2.5.0\jars\play-functional_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-datacommons_2.11\2.5.0\jars\play-datacommons_2.11.jar;C:\Users\TEMP\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.2.jar;C:\Users\TEMP\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.8.1.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.7.1.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-netty-utils\2.5.0\jars\play-netty-utils.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.16.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.16.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.16.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-streams_2.11\2.5.0\jars\play-streams_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.reactivestreams\reactive-streams\jars\reactive-streams-1.0.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-stream_2.11\2.4.2\jars\akka-stream_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-actor_2.11\2.4.2\jars\akka-actor_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.11\bundles\scala-java8-compat_2.11-0.7.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe\ssl-config-akka_2.11\0.1.3\bundles\ssl-config-akka_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe\ssl-config-core_2.11\0.1.3\bundles\ssl-config-core_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-slf4j_2.11\2.4.2\jars\akka-slf4j_2.11.jar;C:\Users\TEMP\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\TEMP\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\TEMP\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\TEMP\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\TEMP\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\TEMP\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\TEMP\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\TEMP\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-netty-server_2.11\2.5.0\jars\play-netty-server_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.netty\netty-reactive-streams-http\1.0.2\jars\netty-reactive-streams-http.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.netty\netty-reactive-streams\1.0.2\jars\netty-reactive-streams.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-transport-native-epoll\jars\netty-transport-native-epoll-4.0.33.Final.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-logback_2.11\jars\play-logback_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.4.jar;C:\Users\TEMP\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.4.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-slick_2.11\jars\play-slick_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.slick\slick_2.11\bundles\slick_2.11-3.1.0.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.slick\slick-hikaricp_2.11\bundles\slick-hikaricp_2.11-3.1.0.jar;C:\Users\TEMP\.ivy2\cache\com.zaxxer\HikariCP-java6\bundles\HikariCP-java6-2.3.7.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-slick-evolutions_2.11\jars\play-slick-evolutions_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\com.h2database\h2\jars\h2-1.4.191.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-ws_2.11\2.5.0\jars\play-ws_2.11.jar;C:\Users\TEMP\.ivy2\cache\com.google.guava\guava\bundles\guava-19.0.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\async-http-client\2.0.0-RC9\jars\async-http-client.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-codec-http\jars\netty-codec-http-4.0.34.Final.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.0.34.Final.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-transport\4.0.34.Final\jars\netty-transport.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-buffer\4.0.34.Final\jars\netty-buffer.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-common\4.0.34.Final\jars\netty-common.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.0.34.Final.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-resolver-dns\2.0.0-RC9\jars\netty-resolver-dns.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-resolver\2.0.0-RC9\jars\netty-resolver.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-codec-dns\2.0.0-RC9\jars\netty-codec-dns.jar;C:\Users\TEMP\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.20.0-GA.jar;C:\Users\TEMP\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\TEMP\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\TEMP\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\TEMP\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\TEMP\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala:29: method current in object Play is deprecated: This is a static reference to application, use DI instead
+D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala:29: method current in object Play is deprecated: This is a static reference to application, use DI instead
+Read from stdout: protected lazy val dbConfig: DatabaseConfig[JdbcProfile] = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+  protected lazy val dbConfig: DatabaseConfig[JdbcProfile] = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+Read from stdout: ^
+                                                                                                          ^
+Read from stdout: D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala:14: method current in object Play is deprecated: This is a static reference to application, use DI instead
+D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala:14: method current in object Play is deprecated: This is a static reference to application, use DI instead
+Read from stdout: protected lazy val dbConfig = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+  protected lazy val dbConfig = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+Read from stdout: ^
+                                                                             ^
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 21.36542764 s
+Attempting to call com.sun.tools.javac.api.JavacTool@7fabdec7 directly...
+Java compilation took 0.969149612 s
+Java analysis took 0.084214946 s
+Java compile + analysis took 1.075275941 s
+Invalidating D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala)
+The D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala source file has the following regular definitions changed:
+	controllers_CategoryController_index2_route, controllers_ProductController_delete7_invoker, controllers_ProductController_insertProduct6_route, controllers_Assets_versioned10_route, controllers_ProductController_product5_route, controllers_CategoryController_index0_route, controllers_CategoryController_category1_invoker, controllers_ProductController_index4_invoker, controllers_SuppliersController_insertSupplier1_invoker, controllers_ProductController_insertProduct6_invoker, controllers_ProductController_product7_route, controllers_CategoryController_delete3_route, controllers_CategoryController_category3_invoker, controllers_Assets_versioned8_route, controllers_CategoryController_insertCategory2_invoker, controllers_CategoryController_category3_route, controllers_SuppliersController_insertSupplier1_route, controllers_CategoryController_index0_invoker, controllers_Assets_versioned8_invoker, controllers_ProductController_product7_invoker, controllers_CategoryController_insertCategory4_invoker, controllers_CategoryController_index2_invoker, controllers_CategoryController_insertCategory2_route, controllers_Assets_versioned10_invoker, controllers_ProductController_index4_route, controllers_ProductController_index6_route, <init>, controllers_ProductController_insertProduct8_invoker, controllers_ProductController_index6_invoker, controllers_SuppliersController_supplier0_invoker, controllers_ProductController_insertProduct8_route, controllers_ProductController_delete7_route, controllers_ProductController_delete9_invoker, controllers_ProductController_product5_invoker, controllers_CategoryController_delete5_route, controllers_CategoryController_category1_route, controllers_CategoryController_delete3_invoker, controllers_SuppliersController_supplier0_route, controllers_CategoryController_delete5_invoker, controllers_ProductController_delete9_route, controllers_CategoryController_insertCategory4_route.
+All member reference dependencies will be considered within this context.
+Invalidating D:\Scala\workspace\product-management\app\Module.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\app\Module.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\app\Module.scala)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\app\Module.scala)
+The D:\Scala\workspace\product-management\app\Module.scala source file has the following regular definitions changed:
+	provideSuppliersDAO.
+All member reference dependencies will be considered within this context.
+Invalidating D:\Scala\workspace\product-management\app\models\entities\Supplier.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\app\models\entities\Supplier.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\app\models\entities\Supplier.scala)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\app\models\entities\Supplier.scala)
+The D:\Scala\workspace\product-management\app\models\entities\Supplier.scala source file has the following regular definitions changed:
+	notify, desc, name, wait, copy$default$2, $asInstanceOf, isValid, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, Supplier, canEqual, productPrefix, notifyAll, isInstanceOf, <init>, id, ==, clone, copy$default$3, copy, toString, !=, getClass, copy$default$1, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java)
+The D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java source file has the following regular definitions changed:
+	SuppliersController.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java
+Invalidating D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala)
+The D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala source file has the following regular definitions changed:
+	notify, unapply, curried, desc, name, wait, *, copy$default$2, $asInstanceOf, SimpleSupplier, productArity, equals, foreignKey$default$5, indexes, asInstanceOf, tableConstraints, foreignKey, synchronized, $isInstanceOf, encodeRef, tupled, primaryKeys, tableNode, canEqual, tableProvider, productPrefix, foreignKeys, notifyAll, readResolve, primaryKey, isInstanceOf, foreignKey$default$6, <init>, id, apply, schemaName, create_*, tableName, tableTag, ==, clone, toNode, collectFieldSymbols, SuppliersTable, TableElementType, copy, column, toString, index$default$3, !=, getClass, copy$default$1, tableIdentitySymbol, ne, O, eq, productIterator, suppliersTableQ, ##, finalize, index, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of D:\Scala\workspace\product-management\app\Module.scala: Set(name, <init>)
+The following modified names cause invalidation of D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala: Set(<init>, id, apply)
+The following modified names cause invalidation of D:\Scala\workspace\product-management\app\controllers\CategoryController.scala: Set(name, <init>, id, apply)
+The following modified names cause invalidation of D:\Scala\workspace\product-management\app\controllers\ProductController.scala: Set(name, <init>, id, apply)
+Invalidating D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala)
+The D:\Scala\workspace\product-management\app\controllers\SuppliersController.scala source file has the following implicit definitions changed:
+	request2session, supplierWrites, request2flash, request2lang.
+All member reference dependencies will be considered within this context.
+Invalidating D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+The D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala source file has the following regular definitions changed:
+	notify, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, insertSupplier, ReverseSuppliersController, supplier, notifyAll, isInstanceOf, <init>, ==, clone, toString, !=, getClass, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java
+Invalidating D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+The D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
+	notify, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, insertSupplier, ReverseSuppliersController, supplier, notifyAll, isInstanceOf, <init>, ==, clone, toString, !=, getClass, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: D:\Scala\workspace\product-management\target\scala-2.11\routes\main\controllers\routes.java
+New invalidations:
+	Set(D:\Scala\workspace\product-management\app\controllers\ProductController.scala, D:\Scala\workspace\product-management\app\controllers\CategoryController.scala, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala)
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\app\controllers\ProductController.scala, D:\Scala\workspace\product-management\app\controllers\CategoryController.scala, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala)
+Including D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala by D:\Scala\workspace\product-management\app\controllers\ProductController.scala
+Including D:\Scala\workspace\product-management\app\Module.scala by D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(D:\Scala\workspace\product-management\app\Module.scala, D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 25 s, completed Jun 19, 2016 6:52:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/D:/Scala/workspace/product-management/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@4e6091e2, check cycles: false
+Total time: 0 s, completed Jun 19, 2016 6:52:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/D:/Scala/workspace/product-management/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@3702289, check cycles: false
+Total time: 0 s, completed Jun 19, 2016 6:52:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/D:/Scala/workspace/product-management/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@387639d3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jun 19, 2016 6:52:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@615d3abc, check cycles: false
+Total time: 0 s, completed Jun 19, 2016 8:00:49 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/D:/Scala/workspace/product-management/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@5d7dcad1, check cycles: false
+Total time: 1 s, completed Jun 19, 2016 8:00:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@3c8b92c7, check cycles: false
+Total time: 0 s, completed Jun 19, 2016 8:01:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/D:/Scala/workspace/product-management/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@12baf70, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(D:\Scala\workspace\product-management\conf\application.conf,D:\Scala\workspace\product-management\target\scala-2.11\classes\application.conf)
+	(D:\Scala\workspace\product-management\conf\evolutions,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions)
+	(D:\Scala\workspace\product-management\conf\logback.xml,D:\Scala\workspace\product-management\target\scala-2.11\classes\logback.xml)
+	(D:\Scala\workspace\product-management\conf\routes,D:\Scala\workspace\product-management\target\scala-2.11\classes\routes)
+	(D:\Scala\workspace\product-management\conf\evolutions\default,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions\default)
+	(D:\Scala\workspace\product-management\conf\evolutions\default\1.sql,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions\default\1.sql)
+	(D:\Scala\workspace\product-management\conf\evolutions\default\2.sql,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions\default\2.sql)
+Total time: 2 s, completed Jun 19, 2016 8:01:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/D:/Scala/workspace/product-management/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@27366f1e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(D:\Scala\workspace\product-management\conf\application.conf,D:\Scala\workspace\product-management\target\scala-2.11\classes\application.conf)
+	(D:\Scala\workspace\product-management\conf\evolutions,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions)
+	(D:\Scala\workspace\product-management\conf\logback.xml,D:\Scala\workspace\product-management\target\scala-2.11\classes\logback.xml)
+	(D:\Scala\workspace\product-management\conf\routes,D:\Scala\workspace\product-management\target\scala-2.11\classes\routes)
+	(D:\Scala\workspace\product-management\conf\evolutions\default,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions\default)
+	(D:\Scala\workspace\product-management\conf\evolutions\default\1.sql,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions\default\1.sql)
+	(D:\Scala\workspace\product-management\conf\evolutions\default\2.sql,D:\Scala\workspace\product-management\target\scala-2.11\classes\evolutions\default\2.sql)
+Total time: 1 s, completed Jun 19, 2016 8:01:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e8aba60, check cycles: false
+Total time: 0 s, completed Jun 19, 2016 9:13:16 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4f6824d7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(D:\Scala\workspace\product-management\app\controllers\CategoryController.scala, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala, D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(D:\Scala\workspace\product-management\app\controllers\CategoryController.scala, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala, D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(D:\Scala\workspace\product-management\app\controllers\CategoryController.scala, D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala, D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala)
+
+Read from stdout: Compiling 3 Scala sources to D:\Scala\workspace\product-management\target\scala-2.11\classes...
+Compiling 3 Scala sources to D:\Scala\workspace\product-management\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 2dc1428e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_92\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_92\jre\classes;C:\Users\TEMP\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar
+	-classpath
+	D:\Scala\workspace\product-management\target\scala-2.11\classes;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-server_2.11\2.5.0\jars\play-server_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play_2.11\2.5.0\jars\play_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\build-link\2.5.0\jars\build-link.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-exceptions\2.5.0\jars\play-exceptions.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-iteratees_2.11\2.5.0\jars\play-iteratees_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-json_2.11\2.5.0\jars\play-json_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-functional_2.11\2.5.0\jars\play-functional_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-datacommons_2.11\2.5.0\jars\play-datacommons_2.11.jar;C:\Users\TEMP\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.2.jar;C:\Users\TEMP\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.8.1.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.7.1.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-netty-utils\2.5.0\jars\play-netty-utils.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.16.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.16.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.16.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-streams_2.11\2.5.0\jars\play-streams_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.reactivestreams\reactive-streams\jars\reactive-streams-1.0.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-stream_2.11\2.4.2\jars\akka-stream_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-actor_2.11\2.4.2\jars\akka-actor_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.11\bundles\scala-java8-compat_2.11-0.7.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe\ssl-config-akka_2.11\0.1.3\bundles\ssl-config-akka_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe\ssl-config-core_2.11\0.1.3\bundles\ssl-config-core_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-slf4j_2.11\2.4.2\jars\akka-slf4j_2.11.jar;C:\Users\TEMP\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\TEMP\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\TEMP\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\TEMP\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\TEMP\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\TEMP\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\TEMP\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\TEMP\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-netty-server_2.11\2.5.0\jars\play-netty-server_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.netty\netty-reactive-streams-http\1.0.2\jars\netty-reactive-streams-http.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.netty\netty-reactive-streams\1.0.2\jars\netty-reactive-streams.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-transport-native-epoll\jars\netty-transport-native-epoll-4.0.33.Final.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-logback_2.11\jars\play-logback_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.4.jar;C:\Users\TEMP\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.4.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-slick_2.11\jars\play-slick_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.slick\slick_2.11\bundles\slick_2.11-3.1.0.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.slick\slick-hikaricp_2.11\bundles\slick-hikaricp_2.11-3.1.0.jar;C:\Users\TEMP\.ivy2\cache\com.zaxxer\HikariCP-java6\bundles\HikariCP-java6-2.3.7.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-slick-evolutions_2.11\jars\play-slick-evolutions_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\com.h2database\h2\jars\h2-1.4.191.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-ws_2.11\2.5.0\jars\play-ws_2.11.jar;C:\Users\TEMP\.ivy2\cache\com.google.guava\guava\bundles\guava-19.0.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\async-http-client\2.0.0-RC9\jars\async-http-client.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-codec-http\jars\netty-codec-http-4.0.34.Final.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.0.34.Final.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-transport\4.0.34.Final\jars\netty-transport.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-buffer\4.0.34.Final\jars\netty-buffer.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-common\4.0.34.Final\jars\netty-common.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.0.34.Final.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-resolver-dns\2.0.0-RC9\jars\netty-resolver-dns.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-resolver\2.0.0-RC9\jars\netty-resolver.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-codec-dns\2.0.0-RC9\jars\netty-codec-dns.jar;C:\Users\TEMP\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.20.0-GA.jar;C:\Users\TEMP\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\TEMP\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\TEMP\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\TEMP\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\TEMP\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala:29: method current in object Play is deprecated: This is a static reference to application, use DI instead
+D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala:29: method current in object Play is deprecated: This is a static reference to application, use DI instead
+Read from stdout: protected lazy val dbConfig: DatabaseConfig[JdbcProfile] = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+  protected lazy val dbConfig: DatabaseConfig[JdbcProfile] = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+Read from stdout: ^
+                                                                                                          ^
+Read from stdout: D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala:14: method current in object Play is deprecated: This is a static reference to application, use DI instead
+D:\Scala\workspace\product-management\app\models\persistence\SlickTables.scala:14: method current in object Play is deprecated: This is a static reference to application, use DI instead
+Read from stdout: protected lazy val dbConfig = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+  protected lazy val dbConfig = DatabaseConfigProvider.get[JdbcProfile](Play.current)
+Read from stdout: ^
+                                                                             ^
+Read from stdout: there was one feature warning; re-run with -feature for details
+there was one feature warning; re-run with -feature for details
+Read from stdout: three warnings found
+three warnings found
+Scala compilation took 6.370692404 s
+Invalidating D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala...
+Invalidating (transitively) by inheritance from D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala...
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala)
+Including D:\Scala\workspace\product-management\app\Module.scala by D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala
+Invalidated by transitive inheritance dependency: Set(D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala, D:\Scala\workspace\product-management\app\Module.scala)
+The D:\Scala\workspace\product-management\app\models\daos\BaseDAO.scala source file has the following regular definitions changed:
+	notify, unapply, wait, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, query, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, filter, <init>, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, ne, MaybeFilter, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of D:\Scala\workspace\product-management\app\controllers\CategoryController.scala: Set(<init>, apply)
+The following modified names cause invalidation of D:\Scala\workspace\product-management\app\Module.scala: Set(<init>)
+The following modified names cause invalidation of D:\Scala\workspace\product-management\app\controllers\ProductController.scala: Set(<init>, apply)
+New invalidations:
+	Set(D:\Scala\workspace\product-management\app\Module.scala, D:\Scala\workspace\product-management\app\controllers\CategoryController.scala, D:\Scala\workspace\product-management\app\controllers\ProductController.scala)
+Initial set of included nodes: Set(D:\Scala\workspace\product-management\app\Module.scala, D:\Scala\workspace\product-management\app\controllers\CategoryController.scala, D:\Scala\workspace\product-management\app\controllers\ProductController.scala)
+Including D:\Scala\workspace\product-management\target\scala-2.11\routes\main\router\Routes.scala by D:\Scala\workspace\product-management\app\controllers\CategoryController.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(D:\Scala\workspace\product-management\app\Module.scala, D:\Scala\workspace\product-management\app\controllers\ProductController.scala)
+Read from stdout: Compiling 3 Scala sources to D:\Scala\workspace\product-management\target\scala-2.11\classes...
+Compiling 3 Scala sources to D:\Scala\workspace\product-management\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 102253fa, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_92\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_92\jre\classes;C:\Users\TEMP\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar
+	-classpath
+	D:\Scala\workspace\product-management\target\scala-2.11\classes;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-server_2.11\2.5.0\jars\play-server_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play_2.11\2.5.0\jars\play_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\build-link\2.5.0\jars\build-link.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-exceptions\2.5.0\jars\play-exceptions.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-iteratees_2.11\2.5.0\jars\play-iteratees_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-json_2.11\2.5.0\jars\play-json_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-functional_2.11\2.5.0\jars\play-functional_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-datacommons_2.11\2.5.0\jars\play-datacommons_2.11.jar;C:\Users\TEMP\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.2.jar;C:\Users\TEMP\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.8.1.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.7.1.jar;C:\Users\TEMP\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.7.1.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-netty-utils\2.5.0\jars\play-netty-utils.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.16.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.16.jar;C:\Users\TEMP\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.16.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-streams_2.11\2.5.0\jars\play-streams_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.reactivestreams\reactive-streams\jars\reactive-streams-1.0.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-stream_2.11\2.4.2\jars\akka-stream_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-actor_2.11\2.4.2\jars\akka-actor_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.11\bundles\scala-java8-compat_2.11-0.7.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe\ssl-config-akka_2.11\0.1.3\bundles\ssl-config-akka_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe\ssl-config-core_2.11\0.1.3\bundles\ssl-config-core_2.11.jar;C:\Users\TEMP\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.akka\akka-slf4j_2.11\2.4.2\jars\akka-slf4j_2.11.jar;C:\Users\TEMP\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\TEMP\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\TEMP\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\TEMP\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\TEMP\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\TEMP\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\TEMP\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\TEMP\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-netty-server_2.11\2.5.0\jars\play-netty-server_2.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.netty\netty-reactive-streams-http\1.0.2\jars\netty-reactive-streams-http.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.netty\netty-reactive-streams\1.0.2\jars\netty-reactive-streams.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-transport-native-epoll\jars\netty-transport-native-epoll-4.0.33.Final.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-logback_2.11\jars\play-logback_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.4.jar;C:\Users\TEMP\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.4.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-slick_2.11\jars\play-slick_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.slick\slick_2.11\bundles\slick_2.11-3.1.0.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.slick\slick-hikaricp_2.11\bundles\slick-hikaricp_2.11-3.1.0.jar;C:\Users\TEMP\.ivy2\cache\com.zaxxer\HikariCP-java6\bundles\HikariCP-java6-2.3.7.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-slick-evolutions_2.11\jars\play-slick-evolutions_2.11-1.1.1.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\com.h2database\h2\jars\h2-1.4.191.jar;C:\Users\TEMP\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.5.0.jar;C:\Users\TEMP\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;D:\Scala\activator-1.3.10\repository\com.typesafe.play\play-ws_2.11\2.5.0\jars\play-ws_2.11.jar;C:\Users\TEMP\.ivy2\cache\com.google.guava\guava\bundles\guava-19.0.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\async-http-client\2.0.0-RC9\jars\async-http-client.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-codec-http\jars\netty-codec-http-4.0.34.Final.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.0.34.Final.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-transport\4.0.34.Final\jars\netty-transport.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-buffer\4.0.34.Final\jars\netty-buffer.jar;D:\Scala\activator-1.3.10\repository\io.netty\netty-common\4.0.34.Final\jars\netty-common.jar;C:\Users\TEMP\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.0.34.Final.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-resolver-dns\2.0.0-RC9\jars\netty-resolver-dns.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-resolver\2.0.0-RC9\jars\netty-resolver.jar;D:\Scala\activator-1.3.10\repository\org.asynchttpclient\netty-codec-dns\2.0.0-RC9\jars\netty-codec-dns.jar;C:\Users\TEMP\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.20.0-GA.jar;C:\Users\TEMP\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\TEMP\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\TEMP\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\TEMP\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\TEMP\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 4.124491186 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 11 s, completed Jun 19, 2016 9:13:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
